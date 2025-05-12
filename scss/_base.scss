@@ -1,0 +1,48 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 22px;
+  }
+}
+
+body {
+  font-family: 'Varta';
+  color: $basic;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: transparent;
+  border: solid 2px #FFFFFF;
+  cursor: pointer;
+}
+
+@mixin arrow() {
+  color: $eye-catching;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 59%;
+    right: 0px;
+    transform: rotate(-45deg);
+    width: 8px;
+    height: 2px;
+    background-color: $eye-catching;
+  }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 42%;
+      right: 0px;
+      transform: rotate(45deg);
+      width: 8px;
+      height: 2px;
+      background-color: $eye-catching;
+    } 
+}

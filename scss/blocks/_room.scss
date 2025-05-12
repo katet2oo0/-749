@@ -1,0 +1,242 @@
+.room {
+  padding: 70px 0;
+  background-color: #F3EEE8;
+
+  // &-block {
+  //   position: relative;
+  // }
+
+  &__title {
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: -0.6px;
+    color: #706458;
+    margin-bottom: 48px;
+  }
+
+  &-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+    &__text {
+      max-width: 165px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 273px;
+      }
+    }
+  }
+
+  &-slider {
+    max-width: 947px;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 500px;
+    }
+    
+    &__item {
+      position: relative;
+      width: 400px;
+
+      &-img {
+        max-width: 262px;
+        height: 350px;
+      }
+
+      &-subtitle {
+        font-family: 'Merriweather';
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 60px;
+        letter-spacing: -0.6px;
+        text-align: center;
+        color: $eye-catching;
+        position: absolute;
+        z-index: 1;
+        top: 165px;
+        left: 104px;
+
+        &_long {
+          top: 130px;
+          max-width: 100px;
+          left: 165px;
+        }
+      }
+
+      &-word {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        position: absolute;
+        z-index: 1;
+        right: 80px;
+        top: 0;
+      }
+    }
+  }
+
+  &-swipe {
+    display: flex;
+    gap: 146px;
+    align-items: center;
+    margin-top: 48px;
+    
+    @media screen and (max-width: 1200px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }  
+
+    &__date {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &__arrow {
+      position: relative;
+
+      &-btn {
+        font-family: 'Karla';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.3px;
+        color: $eye-catching;
+        background: transparent;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          top: 66%;
+          right: -25px;
+          transform: rotate(-45deg);
+          width: 13px;
+          height: 2px;
+          background-color: $eye-catching;
+        }
+        
+        &::after {
+          content: '';
+          position: absolute;
+          top: 36%;
+          right: -25px;
+          transform: rotate(45deg);
+          width: 13px;
+          height: 2px;
+          background-color: $eye-catching;
+        }      
+      }
+    }
+  }
+
+  // &-info {
+  //   display: inline-block;
+  //   padding-right: 24px;
+  //   max-width: 200px;
+  //   position: relative;
+  //   bottom: -52px;
+
+  //   &__text {
+  //     font-weight: 400;
+  //     font-size: 18px;
+  //     line-height: 25px;
+  //     max-width: 165px;
+  //     margin-bottom: 278px;
+  //   }
+
+  //   &__date {
+  //     font-weight: 400;
+  //     font-size: 18px;
+  //     line-height: 25px;
+  //   }
+  // }
+
+  // &-slider {
+  //   display: inline-block;
+  //   max-width: 947px;
+
+  //   &__item {
+  //     position: relative;
+  //     width: 400px;
+  //     margin-right: 10px;
+  //     display: inline-block;
+
+  //     &-img {
+  //       max-width: 262px;
+  //     }
+
+  //     &-subtitle {
+  //       font-family: 'Merriweather';
+  //       font-weight: 400;
+  //       font-size: 55px;
+  //       line-height: 60px;
+  //       letter-spacing: -0.6px;
+  //       text-align: center;
+  //       margin: -190px 0 109px 0;
+  //       padding-left: 105px;
+  //       max-width: 10px;
+  //       color: $eye-catching;
+
+  //       &_long {
+  //         margin-top: -250px;
+  //         padding-left: 145px;
+  //       }
+  //     }
+
+  //     &-word {
+  //       position: absolute;
+  //       z-index: 1;
+  //       top: 0;
+  //       right: 65px;
+  //       font-weight: 400;
+  //       font-size: 18px;
+  //       line-height: 25px;
+  //     }
+  //   }
+  // }
+
+  // &__arrow {
+  //   font-family: 'Karla';
+  //   background: transparent;
+  //   font-weight: 700;
+  //   font-size: 20px;
+  //   line-height: 25px;
+  //   letter-spacing: 0.3px;
+  //   color: $eye-catching;
+  //   position: absolute;
+  //   bottom: -50px;
+  //   left: 190px;
+
+  //   &::before {
+  //     content: '';
+  //     position: absolute;
+  //     top: 66%;
+  //     right: -25px;
+  //     transform: rotate(-27deg);
+  //     width: 13px;
+  //     height: 2px;
+  //     background-color: $eye-catching;
+  //   }
+
+  //   &::after {
+  //     content: '';
+  //     position: absolute;
+  //     top: 40%;
+  //     right: -25px;
+  //     transform: rotate(45deg);
+  //     width: 13px;
+  //     height: 2px;
+  //     background-color: $eye-catching;
+  //   }
+  // }
+}

@@ -1,0 +1,101 @@
+.main {
+  padding: 55px 0 200px;
+  background: #F3EEE8 url(../img/Hero.jpg) no-repeat center right;
+  background-size: 50%;
+
+  @media screen and (max-width: 1200px) {
+    background-size: 100%;
+  }
+
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: $eye-catching;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1200px) {
+      color: #fff;
+    }
+  }
+
+  &__title {
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: -0.4px;
+    max-width: 400px;
+    color: $eye-catching;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30.8px;
+    display: block;
+    max-width: 387px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+      color: #F7F8F9;
+    }
+    }
+
+    &__btn {
+      border-color: $eye-catching;
+      position: relative;
+
+      @media screen and (max-width: 1200px) {
+        border-color: #fff;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 19px;
+        transform: rotate(51deg);
+        width: 16px;
+        height: 2px;
+        background-color: $eye-catching;
+
+        @media screen and (max-width: 1200px) {
+          background-color: #fff;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: rotate(-51deg);
+        width: 16px;
+        height: 2px;
+        background-color: $eye-catching;
+
+        @media screen and (max-width: 1200px) {
+          background-color: #fff;
+        }
+      }
+    }
+
+    &-block {
+      @media screen and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+    }
+}

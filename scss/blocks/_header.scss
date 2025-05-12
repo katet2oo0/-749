@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    &__logo {
+      font-family: 'Merriweather';
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 25px;
+      letter-spacing: 2px;
+      margin-right: 10px;
+      color: $eye-catching;
+
+      @media screen and (max-width: 1200px) {
+        color: #FFFFFF;
+      }
+    }
+
+    &__link {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: $basic;
+      height: 18px;
+
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+
+  &-burger {
+    width: 24px;
+    height: 24px;
+    display: none;
+
+    @media screen and (max-width: 1200px) {
+      display: block;
+    }
+
+    &__line {
+      height: 2px;
+      background-color: #FFFFFF;
+      margin: 8px 0;
+    }
+  }
+
+  &__chat {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+
+    &-img {
+      pointer-events: none;
+    }
+  }
+}

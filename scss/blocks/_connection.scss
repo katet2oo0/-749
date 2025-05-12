@@ -1,0 +1,235 @@
+.connection {
+  padding: 70px 0;
+
+  &-block {
+    @media screen and (max-width: 1200px) {
+      
+    }
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &-trends {
+    @media screen and (max-width: 1200px) {
+      max-width: 311px;
+    }
+
+    &__subtitle {
+      font-family: 'Merriweather';
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 40px;
+      letter-spacing: -0.3px;
+      color: #121212;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+
+    &__arrow {
+      position: relative;
+      max-width: 120px;
+    }
+
+    &__btn {
+      font-family: 'Karla';
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 25px;
+      letter-spacing: 0.3px;
+      color: $eye-catching;
+      background: transparent;
+      @include arrow;
+    }
+  }
+
+  &-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    &__input {
+      padding: 15px;
+      min-width: 296px;
+      background-color: #F3EEE84D;
+      font-family: 'Varta';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &__btn {
+      background-color: #534B42;
+      padding: 12px 29px;
+      color: #FFFFFF;
+      font-family: 'Karla';
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 25px;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &-pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-slider {
+    max-width: 1290px;
+
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    &__item {
+
+      &-img {
+        max-width: 458px;
+        max-height: 550px;
+
+        @media screen and (max-width: 1200px) {
+          max-width: 146px;
+          margin-bottom: 15px;
+        }
+      }
+
+      &-word {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #121212;
+        display: none;
+
+        @media screen and (max-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 150px;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+    &__subtitle {
+      font-family: 'Merriweather';
+      font-weight: 300;
+      font-size: 45px;
+      line-height: 40px;
+      letter-spacing: -0.3px;
+      color: #534B42;
+    }
+
+    &__text {
+      max-width: 350px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &__scrol {
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    &__errow {
+      position: relative;
+      max-width: 104px;
+
+      &_left {
+        border-color: $eye-catching;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 36%;
+          right: 16px;
+          transform: rotate(51deg);
+          width: 16px;
+          height: 2px;
+          background-color: $eye-catching;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 58%;
+          right: 16px;
+          transform: rotate(-51deg);
+          width: 16px;
+          height: 2px;
+          background-color: $eye-catching;
+        }
+      }
+
+      &_right {
+        border-color: $eye-catching;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 36%;
+          left: 16px;
+          transform: rotate(-51deg);
+          width: 16px;
+          height: 2px;
+          background-color: $eye-catching;
+      }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 58%;
+          left: 16px;
+          transform: rotate(51deg);
+          width: 16px;
+          height: 2px;
+          background-color: $eye-catching;
+          }
+        }
+    }
+    
+    &__date {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+}

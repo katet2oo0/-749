@@ -1,0 +1,117 @@
+.footer {
+  background-color: #F3EEE8;
+  padding: 70px 0;
+
+  &-main {
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+    
+    &__logo {
+      font-family: 'Merriweather';
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 25px;
+      letter-spacing: 2px;
+
+      @media screen and (max-width: 1200px) {
+        width: 311px;
+        text-align: center;
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    gap: 48px;
+    justify-content: space-between;
+    
+    
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 115px;
+
+    &__subtitle {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      letter-spacing: -0.2px;
+      padding-bottom: 10px;
+    }
+
+    &__link {
+      color: $basic;
+      display: block;
+    }
+
+    &__img {
+      max-width: 243px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    &__arrow {
+      width: 90px;
+      position: relative;
+
+      &-btn {
+        background: transparent;
+        @include arrow;
+      }
+    }
+  }
+
+
+  &-socials {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &-meta {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
+
+    &__date {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &__link {
+      display: flex;
+      gap: 30px;
+
+      @media screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+      }
+
+      &-word {
+        color: $basic;
+      }
+    }
+  }
+}
